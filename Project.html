@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hot Air Balloon</title>
+    <style>
+      body {
+        background-color: rgb(200, 165, 233);
+      }
+      .Chair {
+        background: linear-gradient(white, pink);
+        max-width: 500px;
+        margin: auto;
+        border-style: solid;
+        border-radius: 20px;
+        padding: 10px 50px;
+        font-family: arial;
+        text-align: center;
+      }
+      h1 {
+        color: palevioletred;
+        text-decoration: underline;
+        font-size: 50px;
+        text-align: center;
+      }
+      h2 {
+        color: blueviolet;
+        font-size: 30px;
+      }
+
+      img {
+        width: 450px;
+        box-shadow: 10px 10px rgb(182, 180, 180);
+      }
+      button {
+        border-radius: 5px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #5dc2f1;
+        color: #5dc2f1;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff;
+        background: #5dc2f1;
+      }
+      .loss {
+        color: palevioletred;
+      }
+      div {
+        text-align: center;
+        margin: 20px;
+        font-size: small;
+      }
+      ul {
+        font-weight: bold;
+        column-count: 2;
+        column-gap: 50px;
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Chair">
+      <h1>Hot Air Balloon</h1>
+      <h2>Home of Exceptional Ballooning</h2>
+      <img
+        src="https://www.daysoftheyear.com/wp-content/uploads/hot-air-balloon-day2.jpg"
+      />
+      <p>
+        Experience exceptional hot air balloon rides from the
+        <em>finest venues in South Africa</em>. <br /><br />Chosen for their
+        exquisite scenery, fine ballooning weather, accommodation options,
+        tourism and interest value.<br /><br />They include the majestic
+        splendour of the Maluti mountain range in Clarens, Gauteng's Cradle of
+        Humankind, the Vaal river and Vredefort Dome meteorite impact site of
+        Parys, the rolling hills of the Natal Midlands, Champagne Valley in the
+        Majestic Drakensberg Mountains and the beautiful Tala Valley just 45
+        minutes from Durban.<br />
+        Experience the Finest Ballooning that South Africa has to offer with
+        loads of colour fun and in the company of highly experienced crew.
+        <br /><br />We have been flying these venues safely for more than 18
+        years. Our balloons, professional experience and hospitality will assure
+        you of an exceptional experience.
+      </p>
+      <hr />
+      <h2>Your Ballooning Experience</h2>
+      <p>
+        Carried away on a gentle breeze... Under a colourful canopy of hot air
+        to a destination unknown...<br /><strong>
+          A really special way with which to celebrate your occasion, be
+          it:</strong
+        >
+      </p>
+      <ul>
+        <li class="ice">
+          <a>Birthday</a>
+        </li>
+        <li class="ice">
+          <a> Anniversary</a>
+        </li>
+        <li class="ice">
+          <a>Engagement</a>
+        </li>
+        <li class="ice">
+          <a>Family Occasion</a>
+        </li>
+        <li class="ice">
+          <a>Bucket List</a>
+        </li>
+        <li class="ice">
+          <a>Romantic Adventure</a>
+        </li>
+        <li class="ice">
+          <a>Team Building Event</a>
+        </li>
+        <li class="ice">
+          <a> Corporate Hospitality</a>
+        </li>
+        <li class="ice">
+          <a> Just The Adventure...</a>
+        </li>
+      </ul>
+      <p>
+        We provide Hot Air Ballooning for just your occasion.<br /><br />
+        One that will set you apart.
+      </p>
+
+      <hr />
+      <h2>About Ballooning</h2>
+      <p>
+        Hot Air Ballooning is a gentle experience that is suitable for all. From
+        age 5 to our eldest passenger of 97 years this is an experience for
+        everyone. <br /><br />It is an outdoor activity that is weather
+        dependent. South Africa's calm early mornings have previously allowed us
+        to fly with a high success rate.<br /><br />
+        We fly 7 days a week and all year round. <br /><br />And if you would
+        like to find out more about our hot air ballooning experience, drop us
+        and email or give us a call!
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Hot_air_balloon#:~:text=A%20hot%20air%20balloon%20is%20a%20lighter-than-air%20aircraft,an%20open%20flame%20caused%20by%20burning%20liquid%20propane."
+        target="blank
+      "
+        >learn more about hot Air Balloons</a
+      >
+      <br />
+
+      <button class="booking">Book a Spot</button>
+
+      <div>
+        <span>Contact Us on - </span>
+        <span class="loss">Email:</span>
+        <span class="add">hotair@balloon.com</span>
+        <span class="loss">Phone:</span>
+        <span class="add">011 985 9565</span>
+      </div>
+    </div>
+  </body>
+  <script>
+    function HotAir() {
+      let name = prompt("what is your name?");
+      let email = prompt("what is your email?");
+      let occasion = prompt("what is the occasion?");
+      let people = prompt("how many people?");
+
+      if (people * 250) {
+        alert(
+          "Thank You.... " +
+            name +
+            "!, we'll send invoice about your " +
+            occasion +
+            " booking :)"
+        );
+      } else {
+        alert(
+          "Thank You.... " +
+            name +
+            "!, we'll contact you soon about your " +
+            occasion +
+            " booking :)"
+        );
+      }
+    }
+    let booking = document.querySelector(".booking");
+    booking.addEventListener("click", HotAir);
+  </script>
+</html>
